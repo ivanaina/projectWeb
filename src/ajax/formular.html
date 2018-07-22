@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> AJAX citanje podataka iz baze </title>
+    
+    <script type='text/javascript' src='jquery-2.1.4.min.js'></script>
+    
+    <script type='text/javascript'>
+      $(document).ready(function(){
+	
+	/* odmah nakon ucitavanja DOM-a generise se AJAX poziv kojim se citaju podaci o studentima */ 	
+	  $.ajax({
+	    method: 'GET', 
+	    url: 'server.php', 
+	    data: {akcija: 'citaj'}, 
+	    
+	    success: function(rezultat){
+	      /* ocekujemo da server posalje odgovor u formatu 
+		  ime1 prezime1 indeks1 :: ime2 prezime2 indeks2 :: .... :: imeN prezimeN indeksN :: */
+	      	      
+	      /* izdvajamo informacije o pojedinacnim studentima -
+        		jedan element niza je niska formata ime prezime indeks */
+	      var studenti=rezultat.split("::");
+	      
+	      /* popunjavamo select listu podacima */
+	      for(var i=0; i<studenti.length-1; i++){
+		    /* iz tekuceg elementa niza izdvajamo ime prezime i indeks */
+		    var podaci=studenti[i].split(" ");
+		    var ime=podaci[0];
+		    var prezime=podaci[1];
+		    var indeks=podaci[2];
+		
+		    /* pa dodajemo podatke select listi */
+		    $("#lista").append("<option value='"+indeks+"'>"+ ime +" " + prezime +" </option>");
+	      }
+	      
+	    }
+	  });
+	  
+	  /* kada korisnik klikne na ajax dugme */
+	  $("#ajax_dugme").click(function(){
+	      
+	      /* prvo citamo broj indeksa odabranog studenta */
+	      var selektovani_indeks=$("#lista").val();
+	      
+	      
+	      /* pa saljemo ajax zahtev serveru */
+	      /* ovog puta su podaci indeks studenta i naznaka da treba isporuciti sve polozene predmete */
+	      $.ajax({
+		    method: 'GET', 
+		    url: 'server.php', 
+		    data: {akcija: 'polozeni_predmeti', indeks: selektovani_indeks}, 
+		    success: function(rezultat){
+		      /* rezultate ispisujemo na strani */
+		      $("#polozeni_predmeti").text(rezultat);
+		    }
+	      });
+	    
+	  });
+      
+      });
+    </script>
+  </head>
+  
+  <body>
+    <select id='lista'>
+    </select>
+    
+    <input type='button' value='prikazi polozene predmete' id='ajax_dugme'>
+    
+    <p id='polozeni_predmeti'> </p>
+  </body>
+</html>
