@@ -1,5 +1,5 @@
 <?php
- 
+  session_start();
   /* ukljucujemo funkcije definisane u datoteci funckije.inc */
   include('funkcije.inc');
   
@@ -20,8 +20,12 @@
     /* formiramo upit i izvrsavamo ga */
   $upit="SELECT Username, Password FROM  Users WHERE Username = '$userName' AND Password='$pass'";
   $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("Problem prilikom izvrsavanja upita");
-  if($rezultat->num_rows > 0)
+
+  if($rezultat->num_rows > 0){
     echo "uspeh";
+    $rezultat = mysqli_fetch_row($rezultat);
+      $_SESSION['username']=$rezultat[0];
+  }
   else
     echo "neuspeh";
  

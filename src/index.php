@@ -1,7 +1,10 @@
+<?php 
+	session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V8</title>
+	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -31,7 +34,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="post" action="main.html" id="login-form">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="post" action="main.php" id="login-form">
 					<span class="login100-form-title">
 						Sign In
 					</span>
@@ -51,11 +54,14 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit" name="submit">
 							Sign in
 						</button>
 					</div>
-
+					
+					<div id="errmsg">
+					
+					</div>
 					<div class="flex-col-c p-t-170 p-b-40">
 						<span class="txt1 p-b-9">
 							Don’t have an account?
@@ -86,6 +92,11 @@
 <!--===============================================================================================-->
 	<script src="Login_v8/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
+<script type='text/javascript'>
+	function print() {
+		$('#errmsg').html('<div class="flex-col-c p-t-60"><span class="txt1 p-b-9">Bad username or password</span></div>');
+	}
+</script>
 	<script src="Login_v8/js/main.js"></script>
 	<script type="text/javascript">
 		$('#login-form').submit(function(e){
@@ -108,7 +119,7 @@
 					console.log(corect);
 				}
 				else{
-					alert("Bad username or password, if you don't have account, make it!")
+					print();
 					console.log("nema u bazi");
 					corect=0;
 				}
@@ -128,5 +139,10 @@
 	});
 
 	</script>
+
 </body>
 </html>
+
+
+
+

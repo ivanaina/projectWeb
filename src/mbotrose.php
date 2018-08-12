@@ -10,6 +10,9 @@
 
 		
 	</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,6 +51,33 @@
 				left: 20px;
 			}
 		}
+		.gallery-wrap .img-big-wrap img {
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+
+.gallery-wrap .img-small-wrap .item-gallery {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-wrap .img-small-wrap {
+    text-align: center;
+}
+.gallery-wrap .img-small-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
 	</style>
 	<title>Education with robots</title>
 </head>
@@ -73,10 +103,10 @@
 				About
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">Education</a>
+				<!-- <a class="dropdown-item" href="#">Education</a>
 				<a class="dropdown-item" href="#robots">Robots</a>
 				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#aboutUs">About us</a>
+ -->				<a class="dropdown-item" href="#aboutUs">About us</a>
 			</div>
 		</li>
 	</ul>
@@ -93,72 +123,104 @@
 	</button>
 	</form>
 </div>
-</nav><!-- 
-<div class="nesto">
+</nav>
+<div class="container">
+	<br>  <p class="text-center">More bootstrap 4 components on </p>
+<hr>
 
-	<div style="position: relative; height: 100vh; background-image: url('http://pbskids.org/learn/img/child-development-tracker.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center">
-		<div style="clip-path: polygon(76% 0, 100% 0, 100% 100%, 36% 100%);
-		height: 100vh; background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)); background-repeat: no-repeat;     background-size: cover; background-position: center">
-	</div>
-	<div class="nesto2">
-		<h1 style="padding-bottom: 5px">Education</h1>
-		<p>Some quick example text to build on the card
-			<a href="https://www.facebook.com" target="_blank">title</a> and make up the bulk of the card's content.</p>
-		</div>
-	</div>
-</div>
- -->
-<div style="height: 100vh; padding-top: 10vh" class="table-responsive" id="robots">
-	<table class="table">
-		<tr>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg"
-					alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="mbot.php" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
-			</td>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg"
-					alt="Card image cap2">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
-			</td>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" style="width: 180px height: 100px" src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg"
-					alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
-			</td>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png"
-					alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
-			</td>
-		</tr>
-	</table>
-</div>
+	
+<div class="card">
+	<div class="row">
+		<aside class="col-sm-5 border-right">
+<article class="gallery-wrap"> 
+<div class="img-big-wrap">
+  <div> <a href="#"><img src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png"></a></div>
+</div> <!-- slider-product.// -->
+<div class="img-small-wrap">
+  <div class="item-gallery"> <img src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png"> </div>
+  <div class="item-gallery"> <img src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png"> </div>
+  <div class="item-gallery"> <img src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png"> </div>
+  <div class="item-gallery"> <img src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png"> </div>
+</div> <!-- slider-nav.// -->
+</article> <!-- gallery-wrap .end// -->
+		</aside>
+		<aside class="col-sm-7">
+<article class="card-body p-5">
+	<h3 class="title mb-3">Mbot</h3>
 
+<p class="price-detail-wrap"> 
+	<span class="price h3 text-warning"> 
+		<span class="currency">RSD </span><span class="num">11999</span>
+	</span> 
+	
+</p> <!-- price-detail-wrap .// -->
+<dl class="item-property">
+  <dt>Description</dt>
+  <dd><p>Here goes description consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco </p></dd>
+</dl>
+<dl class="param param-feature">
+  <dt>Model#</dt>
+  <dd>12345611</dd>
+</dl>  <!-- item-property-hor .// -->
+<dl class="param param-feature">
+  <dt>Color</dt>
+  <dd>Rose</dd>
+</dl>  <!-- item-property-hor .// -->
+<dl class="param param-feature">
+  <dt>Delivery</dt>
+  <dd>Russia, USA, and Europe</dd>
+</dl>  <!-- item-property-hor .// -->
+
+<hr>
+	<div class="row">
+		<div class="col-sm-5">
+			<dl class="param param-inline">
+			  <dt>Quantity: </dt>
+			  <dd>
+			  	<select class="form-control form-control-sm" style="width:70px;">
+			  		<option> 1 </option>
+			  		<option> 2 </option>
+			  		<option> 3 </option>
+			  	</select>
+			  </dd>
+			</dl>  <!-- item-property .// -->
+		</div> <!-- col.// -->
+		<div class="col-sm-7">
+			<!-- <dl class="param param-inline">
+				  <dt>Size: </dt>
+				  <dd>
+				  	<label class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					  <span class="form-check-label">SM</span>
+					</label>
+					<label class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					  <span class="form-check-label">MD</span>
+					</label>
+					<label class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					  <span class="form-check-label">XXL</span>
+					</label>
+				  </dd>
+			</dl>  -->
+		</div> <!-- col.// -->
+	</div> <!-- row.// -->
+	<hr>
+	<a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+	<!-- <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a> -->
+</article> <!-- card-body.// -->
+		</aside> <!-- col.// -->
+	</div> <!-- row.// -->
+</div> <!-- card.// -->
+
+
+</div>
+<!--container.//-->
+
+
+<br><br>
 <!-- Footer -->
 <footer class="page-footer font-small stylish-color-dark pt-4" id="aboutUs">
 
@@ -287,8 +349,7 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 </html>

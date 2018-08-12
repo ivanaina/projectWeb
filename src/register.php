@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V8</title>
+	<title>Register</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -31,13 +31,22 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" id="register-form" method="post" action="index.php">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-150" id="register-form" method="post" action="index.php">
 					<span class="login100-form-title">
 						Sign Up
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
 						<input class="input100" id="regusername" type="text" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+						<input class="input100" id="regaddr" type="text" name="address" placeholder="Address for delevery">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+						<input class="input100" id="regphone" type="text" name="address" placeholder="Phone for delevery">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -51,11 +60,11 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+					<div class="wrap-input100 validate-input m-b-5" data-validate="Please enter username">
 						<input class="input100" id="regconfirm-password" type="password" name="confpass" placeholder="Confirm Password">
 						<span class="focus-input100"></span>
 					</div>
-					<div class="text-right p-t-13 p-b-23">
+					<div class="text-right p-t-5 p-b-23">
 						
 					</div>
 
@@ -65,11 +74,11 @@
 						</button>
 					</div>
 
-					<div class="flex-col-c p-t-20 p-b-40" id="errmsg">
+					<div class="flex-col-c p-t-10 p-b-40" id="errmsg">
 						
 					</div>
 
-					<div class="flex-col-c p-t-40 p-b-40">
+					<div class="flex-col-c p-t-20 p-b-40">
 						<span class="txt1 p-b-9">
 							Nakon registracije ulogujte se na pocetnoj strani!
 						</span>
@@ -104,6 +113,8 @@
 		const emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
 		const registerUsername = $('#regusername').val();
+		const registerAddress=$('#regaddr').val();
+		const registerPhone=$('#regphone').val();
 		const registerEmail = $('#regemail').val();
 		const registerPassword = $('#regpassword').val();
 		const registerConfirm = $('#regconfirm-password').val();
@@ -114,7 +125,7 @@
 			return false;
 		} else if (!emailReg.test(registerEmail)) {
 			return false;
-		} else if (registerUsername.length > 15 || registerPassword.length > 15) {
+		} else if (registerUsername.length > 10 || registerPassword.length > 15) {
 			return false;
 		}
 		var corect=0;
@@ -127,7 +138,9 @@
 				registerUsername: registerUsername,
 				registerEmail: registerEmail,
 				registerPassword: registerPassword,
-				registerConfirm: registerConfirm
+				registerConfirm: registerConfirm,
+				registerAddress: registerAddress,
+				registerPhone: registerPhone
 			},
 			success: function (response) {
 				if(response == "uspeh"){

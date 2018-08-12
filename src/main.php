@@ -93,7 +93,7 @@
 	</button>
 	</form>
 </div>
-</nav><!-- 
+</nav>
 <div class="nesto">
 
 	<div style="position: relative; height: 100vh; background-image: url('http://pbskids.org/learn/img/child-development-tracker.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center">
@@ -107,7 +107,7 @@
 		</div>
 	</div>
 </div>
- -->
+
 <div style="height: 100vh; padding-top: 10vh" class="table-responsive" id="robots">
 	<table class="table">
 		<tr>
@@ -151,7 +151,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>
 						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<a href="mbotrose.php" class="btn btn-primary">Go somewhere</a>
 					</div>
 				</div>
 			</td>
@@ -290,5 +290,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script type="text/javascript" >
+
+	
+</script>
 
 </html>
