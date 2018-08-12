@@ -18,16 +18,18 @@
   $pass=$_POST['logPass'];
     
     /* formiramo upit i izvrsavamo ga */
-  $upit="SELECT Username, Password FROM  Users WHERE Username = '$userName' AND Password='$pass'";
+  $upit="SELECT Username, Admin, Password FROM  Users WHERE Username = '$userName' AND Password='$pass'";
   $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("Problem prilikom izvrsavanja upita");
 
   if($rezultat->num_rows > 0){
     echo "uspeh";
     $rezultat = mysqli_fetch_row($rezultat);
       $_SESSION['username']=$rezultat[0];
+      $_SESSION['admin']=$rezultat[1];
   }
-  else
+  else{
     echo "neuspeh";
+  }
  
  /* raskidamo konekciju sa serverom */
  diskonektuj_se();

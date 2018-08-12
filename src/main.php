@@ -6,10 +6,6 @@
 
 <head>
 <link rel="icon" type="image/png" href="Login_v8/images/icons/favicon.ico"/>
-	<title>
-
-		
-	</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,6 +49,8 @@
 </head>
 
 <body>
+
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
 		<a class="navbar-brand" href="#">Robots</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 			aria-controls="navbarSupportedContent"
@@ -94,6 +92,7 @@
 	</form>
 </div>
 </nav>
+
 <div class="nesto">
 
 	<div style="position: relative; height: 100vh; background-image: url('http://pbskids.org/learn/img/child-development-tracker.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center">
@@ -106,7 +105,12 @@
 			<a href="https://www.facebook.com" target="_blank">title</a> and make up the bulk of the card's content.</p>
 		</div>
 	</div>
+
 </div>
+<?php 
+	if($_SESSION['admin']==1)
+		echo "<div>Usao adimin</div>";
+ ?>
 
 <div style="height: 100vh; padding-top: 10vh" class="table-responsive" id="robots">
 	<table class="table">
