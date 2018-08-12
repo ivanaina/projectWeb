@@ -26,36 +26,11 @@
     
     /* formiramo upit i izvrsavamo ga */
     $upit="INSERT INTO Users (Username, Email, Password) VALUES('$userName','$email','$pass')";
-    $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("Problem prilikom izvrsavanja upita");
-    
-    /* sve podatke koje citamo formatiracemo na nivou niske */
-    // $za_slanje="";
-    // while($red=mysqli_fetch_assoc($rezultat)){
-    //   $za_slanje.=$red['ime']." ".$red['prezime']." ".$red['indeks']."::";
-    // }
-    
-    // case "polozeni_predmeti":
-    //   $indeks=$_GET['indeks'];
-    //   $upit="select naziv from polaganja, predmeti where ocena>5 and indeks='$indeks' and polaganja.sifra=predmeti.sifra";
-    //   $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("Problem prilikom izvrsavanja upita");
-    //   if(mysqli_num_rows($rezultat)==0){
-    // 	$za_slanje="Nema polozenih predmeta!";
-    //   }
-    //   else{
-	   //  $za_slanje="";
-	   //  while($red=mysqli_fetch_assoc($rezultat)){
-	   //    $za_slanje.=$red['naziv']." ";
-	   //  }
-    //     }
-
-
- /* saljemo podatke */
- if($rezultat) {
-    echo "success";
-  }
-  else {
-    echo "error";
-  }
+    $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("postoji");
+    if(mysqli_affected_rows($veza_sa_bazom) > 0)
+      echo "uspeh";
+    else
+      echo "neuspeh";
  
  /* raskidamo konekciju sa serverom */
  diskonektuj_se();

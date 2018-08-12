@@ -5,7 +5,7 @@
         global $veza_sa_bazom;
         
         /* NAPOMENA: korisnicko ime i sifru i ime baze prilagoditi svojim podesavanjima */
-        $veza_sa_bazom=mysqli_connect("localhost", "root", "mi14126", "Roboti");
+        $veza_sa_bazom=mysqli_connect("localhost", "root", "ina", "Roboti");
         if(mysqli_connect_errno()){
             die("Problem prilikom povezivanja sa bazom: ".mysqli_connect_error());
         }
