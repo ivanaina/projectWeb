@@ -262,7 +262,7 @@ img {
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#kupi").click(function() {
-				const model="Mbotrose";
+				const model="Ultimate";
 				if(confirm("Da li zelite da kupite ovo?")){
 
 					$.ajax({

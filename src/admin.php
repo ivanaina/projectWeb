@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
 	crossorigin="anonymous">
 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
 	<style >
 		body {
 			padding-left: 10px;
@@ -51,17 +54,77 @@
 			}
 		}
 
+		body{
+    		background-color:#EEEEEE;
+		}
+		body{
+    background-color:#EEEEEE;
+}
 	</style>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 	<title>Education with robots</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $(".check").click(function(){
+
+      let name = $(this).attr('name');
+      
+      $.ajax({
+        method: 'post',
+        url: 'ajax/changeStatus.php',
+        data: {
+          name: name
+        },
+        success: function(response){
+          console.log("response");
+        }
+      });
+      window.location='admin.php';
+    });
+    $(".uncheck").click(function(){
+
+      let name = $(this).attr('name');
+      
+      $.ajax({
+        method: 'post',
+        url: 'ajax/changeStatus.php',
+        data: {
+          name: name
+        },
+        success: function(response){
+          console.log("response");
+        }
+      });
+      window.location='admin.php';
+    });
+    $(".delete").click(function(){
+
+      let name = $(this).attr('name');
+      
+      $.ajax({
+        method: 'post',
+        url: 'ajax/delete.php',
+        data: {
+          name: name
+        },
+        success: function(response){
+          console.log("response");
+        }
+      });
+      window.location='admin.php';
+    });
+});
+
+</script>
 </head>
 
 <body>
 
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-		<a class="navbar-brand" href="#">Robots</a>
+		<a class="navbar-brand" href="main.php">Robots</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 			aria-controls="navbarSupportedContent"
 			aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -70,7 +133,7 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Home
+				<a class="nav-link" href="main.php">Home
 					<span class="sr-only">(current)</span>
 				</a>
 			</li>
@@ -80,8 +143,8 @@
 				About
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">Education</a>
-				<a class="dropdown-item" href="#robots">Robots</a>
+				<a class="dropdown-item" href="main.php#">Education</a>
+				<a class="dropdown-item" href="main.php#robots">Robots</a>
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#footer">About us</a>
 			</div>
@@ -99,98 +162,120 @@
 		<input class="form-control mr-sm-2 " id="" defaultValue="" type="text" placeholder="Search..." aria-label="userName">
 		<button class="btn btn-outline-success mr-sm-2 my-2 my-sm-0" type="submit">Search</button>
 	</form> -->
-	<?php 
-	if(isset($_SESSION['username'])){
-		echo '<form method="get" action="logout.php">
+	<form method="get" action="logout.php">
     	<button class="btn btn-outline-success mr-sm-2 my-2 my-sm-0" type="submit">Log Out of 
-			' . $_SESSION["username"] .'
-	</button></form>';
-		}
+    	<?php 
+			echo $_SESSION['username'];
+		?>
+		
+	</button>
 
-	else {
-		echo '<form method="post" action="index.php">
-    	<button class="btn btn-outline-success mr-sm-2 my-2 my-sm-0" type="submit">Sign In 
-	</button></form>
 
-	<form method="post" action="register.php">
-    	<button class="btn btn-outline-success mr-sm-2 my-2 my-sm-0" type="submit">Sign Up
-	</button></form>';
 
-		} ?>
-	
-	
+	</form>
 </div>
 </nav>
 
-<div class="nesto">
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
+<br>
 
-	<div style="position: relative; height: 100vh; background-image: url('http://pbskids.org/learn/img/child-development-tracker.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center">
-		<div style="clip-path: polygon(76% 0, 100% 0, 100% 100%, 36% 100%);
-		height: 100vh; background-image: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)); background-repeat: no-repeat;     background-size: cover; background-position: center">
+<div class="container">
+	<div class="row">
+		
+        
+        <div class="col-md-12">
+        <h4>Bootstrap Snipp for Datatable</h4>
+        <div class="table-responsive">
+
+                
+              <table id="mytable" class="table table-bordred table-striped">
+                   
+                   <thead>           
+                   <th>Model</th>
+                   <th>Username</th>
+                     <th>Address</th>
+                     <th>Email</th>
+                     <th>Contact</th>
+                      <th>Done</th>
+                      <th>Delete</th>
+                       
+                   </thead>
+
+    <tbody>
+    <?php
+  /* ukljucujemo funkcije definisane u datoteci funckije.inc */
+  include('ajax/funkcije.inc');
+  
+  /* povezujemo se sa serverom */
+  konektuj_se();
+    
+    /* formiramo upit i izvrsavamo ga */
+  $upit="SELECT * FROM  Porudzbina WHERE status = 1 ORDER BY datum_porudzbine DESC";
+  $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("Problem prilikom izvrsavanja upita");
+  
+  while($red = mysqli_fetch_assoc($rezultat)){
+      $id = $red['id_porudzbine'];
+      $username = $red['username'];
+      $model = $red['model'];
+      $address = $red['address'];
+      $email = $red['email'];
+      $phone = $red['phone'];
+      
+      echo  '<tr>
+
+    <td>' . $model . '</td>
+    <td>' . $username . '</td>
+    <td>' . $address . '</td>
+    <td>' . $email . '</td>
+    <td>' . $phone . '</td>
+    <td><p><button href name="' . $id .'" class="btn btn-primary btn-xs check"><span class="fa fa-circle"></span></button></p></td>
+    <td><p><button name="'. $id .'" class="btn btn-danger btn-xs delete"><span class="fa fa-trash"></span></button></p></td>
+    </tr>';
+      
+      
+    }
+
+    $upit="SELECT * FROM  Porudzbina WHERE status = 0 ORDER BY datum_porudzbine";
+  $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("Problem prilikom izvrsavanja upita");
+  
+  while($red = mysqli_fetch_assoc($rezultat)){
+      $id = $red['id_porudzbine'];
+      $username = $red['username'];
+      $model = $red['model'];
+      $address = $red['address'];
+      $email = $red['email'];
+      $phone = $red['phone'];
+      
+      echo  '<tr>
+    <td>' . $model . '</td>
+    <td>' . $username . '</td>
+    <td>' . $address . '</td>
+    <td>' . $email . '</td>
+    <td>' . $phone . '</td>
+    <td><p><button type="submit" name="' . $id .'" class="btn btn-primary btn-xs uncheck"><span class="fa fa-check-circle"></span></button></p></td>
+    <td><p><button name="'. $id .'" class="btn btn-danger btn-xs delete"><span class="fa fa-trash"></span></button></p></td>
+    </tr>';
+
+      
+      
+    }
+    
+ /* raskidamo konekciju sa serverom */
+ diskonektuj_se();
+
+?>
+    <form></form>
+    </tbody>
+        
+</table>         
+            </div>   
+        </div>
 	</div>
-	<div class="nesto2">
-		<h1 style="padding-bottom: 5px">Education</h1>
-		<p>Some quick example text to build on the card
-			<a href="https://www.facebook.com" target="_blank">title</a> and make up the bulk of the card's content.</p>
-		</div>
-	</div>
-
 </div>
-<?php 
-	if($_SESSION['admin'] == 1)
-		 ?>
-
-<div style="height: 100vh; padding-top: 10vh" class="table-responsive" id="robots">
-	<table class="table">
-		<tr>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg"
-					alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="mbot.php" class="btn btn-primary">Read more or Buy</a>
-					</div>
-				</div>
-			</td>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg"
-					alt="Card image cap2">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="ultimate.php" class="btn btn-primary">Read more or Buy</a>
-					</div>
-				</div>
-			</td>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" style="width: 180px height: 100px" src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg"
-					alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="dash.php" class="btn btn-primary">Read more or Buy</a>
-					</div>
-				</div>
-			</td>
-			<td>
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png"
-					alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="mbotrose.php" class="btn btn-primary">Read more or Buy</a>
-					</div>
-				</div>
-			</td>
-
-		</tr>
-	</table>
-</div>
+    
+    
+    
+    
 
 <!-- Footer -->
 <footer class="page-footer font-small blue-grey lighten-5" id="footer">
@@ -300,14 +385,8 @@
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-
-<script type="text/javascript" >
-
-	
-</script>
 
 </html>

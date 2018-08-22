@@ -1,5 +1,5 @@
 <?php
- 
+  session_start();
   /* ukljucujemo funkcije definisane u datoteci funckije.inc */
   include('funkcije.inc');
   
@@ -23,6 +23,7 @@
     
   /* inace, analiziramo vrednost akcije */
   $userName=$_POST['registerUsername'];
+  $admin=0;
   $address=$_POST['registerAddress'];
   $phone=$_POST['registerPhone'];
   $email=$_POST['registerEmail'];
@@ -31,10 +32,16 @@
     /* treba procitati podatke o studentima */
     
     /* formiramo upit i izvrsavamo ga */
-    $upit="INSERT INTO Users (Username, Address, Phone, Email, Password) VALUES('$userName','$address','$phone','$email','$pass')";
+    $upit="INSERT INTO Users (Username, Admin, Address, Phone, Email, Password) VALUES('$userName','$admin','$address','$phone','$email','$pass')";
     $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("postoji");
-    if(mysqli_affected_rows($veza_sa_bazom) > 0)
+    if(mysqli_affected_rows($veza_sa_bazom) > 0){
+      $_SESSION['username']=$userName;
+      $_SESSION['admin']=$admin;
+      $_SESSION['address']=$address;
+      $_SESSION['phone']=$phone;
+      $_SESSION['email']=$email;
       echo "uspeh";
+    }
     else
       echo "neuspeh";
  

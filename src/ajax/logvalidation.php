@@ -18,7 +18,7 @@
   $pass=$_POST['logPass'];
     
     /* formiramo upit i izvrsavamo ga */
-  $upit="SELECT Username, Admin, Password FROM  Users WHERE Username = '$userName' AND Password='$pass'";
+  $upit="SELECT * FROM  Users WHERE Username = '$userName' AND Password='$pass'";
   $rezultat=mysqli_query($veza_sa_bazom, $upit) or die("Problem prilikom izvrsavanja upita");
 
   if($rezultat->num_rows > 0){
@@ -26,6 +26,9 @@
     $rezultat = mysqli_fetch_row($rezultat);
       $_SESSION['username']=$rezultat[0];
       $_SESSION['admin']=$rezultat[1];
+      $_SESSION['address']=$rezultat[2];
+      $_SESSION['phone']=$rezultat[3];
+      $_SESSION['email']=$rezultat[4];
   }
   else{
     echo "neuspeh";

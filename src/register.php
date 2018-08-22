@@ -31,7 +31,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-150" id="register-form" method="post" action="index.php">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-150" id="register-form" method="post" action="main.php">
 					<span class="login100-form-title">
 						Sign Up
 					</span>
@@ -80,7 +80,7 @@
 
 					<div class="flex-col-c p-t-20 p-b-40">
 						<span class="txt1 p-b-9">
-							Nakon registracije ulogujte se na pocetnoj strani!
+							Nakon registracije u mogucnosti ste da kupujete robote!
 						</span>
 					</div>
 
@@ -162,7 +162,7 @@
 		});
 		console.log(registerPassword,registerEmail,registerConfirm,registerUsername);
 		if(corect == 1){
-			alert("You are successfuly register, now log in!");
+			
 			return true;
 		}
 		else if( corect == -1)
