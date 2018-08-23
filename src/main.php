@@ -167,7 +167,7 @@
 			</td>
 			<td>
 				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" style="width: 180px height: 100px" src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg"
+					<img class="card-img-top" style="width: 180px height: 100px" src="https://cdn.shopify.com/s/files/1/2363/7229/products/20171022151945_1800x.jpg?v=1527481643"
 					alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>

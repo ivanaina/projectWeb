@@ -258,7 +258,7 @@ img {
 
 	</style>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<title>Dash</title>
+	<title>Mbot rose</title>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#kupi").click(function() {
@@ -345,18 +345,18 @@ img {
 					<div class="preview col-md-6">
 						
 						<div class="preview-pic tab-content">
-						  <div class="tab-pane active" id="pic-1"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-2"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg" /></div>
-						  <div class="tab-pane" id="pic-3"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-4"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-5"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
+						  <div class="tab-pane active" id="pic-1"><img src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="http://www.desertroselandscaping.net/bmz_cache/e/ecc96a2554105bf82ac94b9acb13a729.image.500x500.jpg" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="https://cdn-reichelt.de/bilder/web/xxl_ws/C160/90107_03.png" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="http://www.spc-makeblock.es/wp-content/uploads/2017/11/spc_makeblock_mBot_rosa_90107_1.jpg" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="https://store.makeblock.com/image/cache/catalog/90107/3L4A9379-800x800.jpg" /></div>
 						</div>
 						<ul class="preview-thumbnail nav nav-tabs">
-						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-2" data-toggle="tab"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg" /></a></li>
-						  <li><a data-target="#pic-3" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-4" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-5" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://www.ducan-online.com/wp-content/uploads/2018/01/mbot-v11-stem-edukativni-robot-za-decu-bluetooth-rozi-1.png" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="http://www.desertroselandscaping.net/bmz_cache/e/ecc96a2554105bf82ac94b9acb13a729.image.500x500.jpg" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="https://cdn-reichelt.de/bilder/web/xxl_ws/C160/90107_03.png" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="http://www.spc-makeblock.es/wp-content/uploads/2017/11/spc_makeblock_mBot_rosa_90107_1.jpg" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="https://store.makeblock.com/image/cache/catalog/90107/3L4A9379-800x800.jpg" /></a></li>
 						</ul>
 						
 					</div>

@@ -258,7 +258,7 @@ img {
 
 	</style>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<title>Dash</title>
+	<title>Mbot</title>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#kupi").click(function() {
@@ -346,17 +346,17 @@ img {
 						
 						<div class="preview-pic tab-content">
 						  <div class="tab-pane active" id="pic-1"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-2"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg" /></div>
-						  <div class="tab-pane" id="pic-3"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-4"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-5"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="http://www.lukvel.rs/slike/velike/makeblock-mbot-v11-stem-edukacioni-robot-mbotv11_1.jpg" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="https://cdn.shopify.com/s/files/1/0735/0383/products/90053__42332.1461824832.1280.1280_1024x1024_1024x1024_b2b334d3-bb95-4f3b-a8bb-459037f6d718.jpg?v=1523791257" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="https://www.astanadigital.com/webshaper/pcm/gallery/lg/cd92e7173c421402e0d8564bc90efc381452842565-lg.jpg" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="https://i.ebayimg.com/images/g/HosAAOSwhlZYtyZ9/s-l640.jpg" /></div>
 						</div>
 						<ul class="preview-thumbnail nav nav-tabs">
 						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-2" data-toggle="tab"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg" /></a></li>
-						  <li><a data-target="#pic-3" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-4" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-5" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="http://www.lukvel.rs/slike/velike/makeblock-mbot-v11-stem-edukacioni-robot-mbotv11_1.jpg" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="https://cdn.shopify.com/s/files/1/0735/0383/products/90053__42332.1461824832.1280.1280_1024x1024_1024x1024_b2b334d3-bb95-4f3b-a8bb-459037f6d718.jpg?v=1523791257" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="https://www.astanadigital.com/webshaper/pcm/gallery/lg/cd92e7173c421402e0d8564bc90efc381452842565-lg.jpg" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/HosAAOSwhlZYtyZ9/s-l640.jpg" /></a></li>
 						</ul>
 						
 					</div>

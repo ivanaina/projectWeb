@@ -258,7 +258,7 @@ img {
 
 	</style>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<title>Dash</title>
+	<title>Ultimate</title>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#kupi").click(function() {
@@ -343,23 +343,25 @@ img {
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
-						
 						<div class="preview-pic tab-content">
-						  <div class="tab-pane active" id="pic-1"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-2"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg" /></div>
-						  <div class="tab-pane" id="pic-3"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-4"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						  <div class="tab-pane" id="pic-5"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></div>
-						</div>
-						<ul class="preview-thumbnail nav nav-tabs">
-						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-2" data-toggle="tab"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg" /></a></li>
-						  <li><a data-target="#pic-3" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-4" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						  <li><a data-target="#pic-5" data-toggle="tab"><img src="https://www.yogee.com.au/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/M/B/MBK_90058_6.jpg" /></a></li>
-						</ul>
+              <div class="tab-pane active" id="pic-1"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg"
+          alt="Card image cap2" /></div>
+              <div class="tab-pane" id="pic-2"><img src="https://static3.shop033.com/resources/C5/164037/picture/9A/86409370.JPG" /></div>
+              <div class="tab-pane" id="pic-3"><img src="https://www.stemfinity.com/image/catalog/Makeblock/90040/Makeblock-Ultimate-2-0-10-in-1-Robot-Kit-08.JPG" /></div>
+              <div class="tab-pane" id="pic-4"><img src="http://cdnlab.makeblock.com/Fp9oCk00XRsVu7grzPqHnWUXbOZG?imageMogr2/thumbnail/765x/gravity/Center" /></div>
+              <div class="tab-pane" id="pic-5"><img src="http://www.spc-makeblock.es/wp-content/uploads/2016/07/mbot-Ultimatev2-0-Makeblock-90040.jpg" /></div>
+            </div>
+            <ul class="preview-thumbnail nav nav-tabs">
+              <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://www.robotshop.com/media/catalog/product/cache/image/480x480/9df78eab33525d08d6e5fb8d27136e95/m/a/makeblock-ultimate-20-10-in-1-kit-electronics.jpg"
+          alt="Card image cap2" /></a></li>
+              <li><a data-target="#pic-2" data-toggle="tab"><img src="https://static3.shop033.com/resources/C5/164037/picture/9A/86409370.JPG" /></a></li>
+              <li><a data-target="#pic-3" data-toggle="tab"><img src="https://www.stemfinity.com/image/catalog/Makeblock/90040/Makeblock-Ultimate-2-0-10-in-1-Robot-Kit-08.JPG" /></a></li>
+              <li><a data-target="#pic-4" data-toggle="tab"><img src="http://cdnlab.makeblock.com/Fp9oCk00XRsVu7grzPqHnWUXbOZG?imageMogr2/thumbnail/765x/gravity/Center" /></a></li>
+              <li><a data-target="#pic-5" data-toggle="tab"><img src="http://www.spc-makeblock.es/wp-content/uploads/2016/07/mbot-Ultimatev2-0-Makeblock-90040.jpg" /></a></li>
+            </ul>
+            
+          </div>
 						
-					</div>
 					<div class="details col-md-6">
 						<h3 class="product-title">men's shoes fashion</h3>
 						<p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
