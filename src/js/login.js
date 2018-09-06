@@ -1,7 +1,9 @@
-function print() {
-		$('#errmsg').html('<div class="flex-col-c p-t-60"><span class="txt1 p-b-9">Bad username or password</span></div>');
+$(document).ready(function(){
+
+	function print() {
+		$('#errmsg').html('<div class="flex-col-c p-t-20"><span class="txt1 p-b-9">Bad username or password</span></div>');
 	}
-function showValidate(input) {
+	function showValidate(input) {
         var thisAlert = $(input).parent();
         $(thisAlert).addClass('alert-validate');
     }
@@ -28,36 +30,28 @@ function showValidate(input) {
         		return false;
         	}
         }
-
-
         
     }
-		$('#login-form').submit(function(e){
-
-			var check = true;
+	$('#login-form').submit(function(e){
+		var check = true;
 		var input = $('.validate-input .input100');
 		$('.validate-form .input100').each(function(){
-
-        $(this).focus(function(){
-           hideValidate(this);
-        });
-
-
-    });
+        	$(this).focus(function(){
+           		hideValidate(this);
+        	});
+    	});
         for(var i=0; i<input.length; i++) {
             if(validate(input[i]) == false){
-
                 showValidate(input[i]);
                 check=false;
             }
         }
         if(check==false)
-        return false;
-
-
+        	return false;
 
 		const logUsername = $('#username').val();
 		const logPass = $('#password').val();
+
 		var corect=0;
 		$.ajax({
 			async: false,
@@ -92,3 +86,5 @@ function showValidate(input) {
 			return false;
 
 	});
+});
+	
